@@ -1,3 +1,5 @@
+
+<!--做了两件事：1.获取数据和展示数据-->
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 
@@ -16,6 +18,7 @@
 
         //ViewModel
         var vue = new Vue({
+            //和对应div绑定
             el: '#workingArea',
             data: data4Vue,
             mounted:function(){ //mounted　表示这个 Vue 对象加载成功了
@@ -92,6 +95,7 @@
             </tr>
             </thead>
             <tbody>
+<!--            遍历展示数据-->
             <tr v-for="bean in beans ">
                 <td>{{bean.id}}</td>
                 <td>

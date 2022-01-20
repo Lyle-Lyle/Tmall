@@ -1,3 +1,9 @@
+/**
+* 模仿天猫整站 springboot 教程 为 how2j.cn 版权所有
+* 本教程仅用于学习使用，切勿用于非法用途，由此引起一切后果与本站无关
+* 供购买者学习，请勿私自传播，否则自行承担相关法律责任
+*/	
+
 package com.how2java.tmall.util;
  
 import java.util.List;
@@ -35,7 +41,8 @@ public class Page4Navigator<T> {
     public Page4Navigator() {
         //这个空的分页是为了 Redis 从 json格式转换为 Page4Navigator 对象而专门提供的
     }
-     
+
+//    就是对Page类简单封装了一下
     public Page4Navigator(Page<T> pageFromJPA,int navigatePages) {
         this.pageFromJPA = pageFromJPA;
         this.navigatePages = navigatePages;
@@ -208,3 +215,4 @@ public class Page4Navigator<T> {
     }
  
 }
+
